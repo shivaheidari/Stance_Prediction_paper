@@ -3,13 +3,13 @@
 import codecs
 import json
 import os
-import cld2
+import pycld2 as cld2
 # nltk.download()
 import pandas as pd
 from nltk.corpus import opinion_lexicon
 from PreProcessing.cleaning_text import cleaning_text
 from PreProcessing.labeling_opinion_words import labeling_opinion_words
-import Utils
+import utils
 
 """ ---------------------private method area----------------------------------------"""
 
@@ -105,5 +105,5 @@ for u_name in u_list:
         process_user_tweets(des, u_name)
         print(str(processed_count))
 
-ut = Utils.Utils()
+ut = utils.Utils()
 ut.get_al_lfilename_in_folder("txt", out_dir, "../out/valid_friends.txt")
