@@ -88,15 +88,15 @@ def process_user_tweets(des, u_name):
             for jsl in json_tweets:
                 fp.write(json.dumps(jsl, ensure_ascii=False))
                 fp.write("\n")
-
+        # fp.close()
 
 """ ------------------------------main area----------------------------------------"""
-out_dir = "../Data/Galaxy_ds/preproc_target_seeds"
-users_source_dir = "../Data/Galaxy_ds/users_target_tweets"
+out_dir = "../Data/Galaxy_ds/preproc_target_friends"
+users_source_dir = "../Data/Galaxy_ds/friends_target_tweets"
 # friends_source_dir = ".../Data/galaxy/friends_profile"
 threshold = 0.06
 set_output_directory()
-u_list = open("../Data/Galaxy_ds/target_seed.txt", 'r')
+u_list = open("../Data/Galaxy_ds/target_friends.txt", 'r')
 op_lst = set(opinion_lexicon.words())
 processed_count = 0
 for u_name in u_list:
