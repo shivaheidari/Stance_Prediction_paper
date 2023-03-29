@@ -4,7 +4,9 @@ import codecs
 import json
 import os
 import pycld2 as cld2
-# nltk.download()
+import nltk
+# nltk.download("opinion_lexicon")
+# nltk.download("stopwords")
 import pandas as pd
 from nltk.corpus import opinion_lexicon
 from PreProcessing.cleaning_text import cleaning_text
@@ -35,9 +37,9 @@ def get_file_path(u_name):
     if os.path.exists(users_source_dir + '/' + u_name + '.txt'):
         return users_source_dir + '/' + u_name + '.txt'
 
-    if os.path.exists(friends_source_dir + '/' + u_name + '.txt'):
-             return friends_source_dir + '/' + u_name + '.txt'
-    return ""
+    # if os.path.exists(friends_source_dir + '/' + u_name + '.txt'):
+    #          return friends_source_dir + '/' + u_name + '.txt'
+    # return ""
 
 
 def process_user_tweets(des, u_name):
@@ -45,7 +47,7 @@ def process_user_tweets(des, u_name):
     json_tweets = []
 
     s_file = get_file_path(u_name)
-    if s_file=="":
+    if s_file == "":
         print(u_name+".txt not found")
         return
     df_file = pd.read_json(codecs.open(s_file, 'r', 'utf-8'), orient='records', lines=True)
@@ -89,21 +91,22 @@ def process_user_tweets(des, u_name):
 
 
 """ ------------------------------main area----------------------------------------"""
-out_dir = "../Out/friends_profile_preprocessed"
-users_source_dir = "../Data/galaxy/users_profile"
-friends_source_dir = ".../Data/galaxy/friends_profile"
+out_dir = "../Data/Galaxy_ds/preproc_target_seeds"
+users_source_dir = "../Data/Galaxy_ds/users_target_tweets"
+# friends_source_dir = ".../Data/galaxy/friends_profile"
 threshold = 0.06
 set_output_directory()
-u_list = open("../Out/all_users.txt", 'r')
+u_list = open("../Data/Galaxy_ds/target_seed.txt", 'r')
 op_lst = set(opinion_lexicon.words())
 processed_count = 0
 for u_name in u_list:
     processed_count += 1
     u_name = u_name.rstrip()
+    print("user:", processed_count, u_name)
     des = out_dir + "/" + u_name + ".txt"
     if os.path.isfile(des) is False:
         process_user_tweets(des, u_name)
-        print(str(processed_count))
+        # print(str(processed_count))
 
-ut = utils.Utils()
-ut.get_al_lfilename_in_folder("txt", out_dir, "../out/valid_friends.txt")
+# ut = utils.Utils()
+# ut.get_al_lfilename_in_folder("txt", out_dir, "../out/valid_friends.txt")
