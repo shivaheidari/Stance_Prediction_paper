@@ -6,7 +6,7 @@ import os
 
 
 
-for fileName_relative in glob.glob("../Data/Galaxy_ds/friends_target_tweets/*.txt",recursive=True):
+for fileName_relative in glob.glob("../Data/Galaxy_ds/preproc_target_friends/*.txt",recursive=True):
 
     fileName_absolute = os.path.basename(fileName_relative)
 
@@ -16,6 +16,6 @@ for fileName_relative in glob.glob("../Data/Galaxy_ds/friends_target_tweets/*.tx
 
     # uname_files.append(fileName_absolute)
 print(uname_list)
-ufile = open("../Data/Galaxy_ds/friends_users.txt", 'w+')
+ufile = open("../Data/Galaxy_ds/valid_friends_users.txt", 'w+')
 for user in uname_list:
     ufile.write(user+'\n')
