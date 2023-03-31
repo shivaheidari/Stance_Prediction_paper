@@ -15,8 +15,6 @@ from pattern.en import sentiment
 import codecs
 import json
 
-from google.colab import drive
-drive.mount('/content/drive/')
 
 source = "/content/drive/My Drive/Data/users_target_tweets"
 dest = "/content/drive/My Drive/Data/Preprocess_subj_stance"
