@@ -69,16 +69,17 @@ def process_general_tweets(des_fie, user_name):
 """ ------------------------------main area----------------------------------------"""
 # Samsung related topics are common between all users so it has no value for detecting similar users
 #common_topic_regex = r'(.+samsung).+'
-out_dir = "../Data/Galaxy_ds/Topic_detection/cleaned_Tweets_Seed_Users_general"
-users_source_dir = "../Data/Galaxy_ds/users_tweets_general"
+out_dir = "../Data/Galaxy_ds/Topic_detection/cleaned_Tweets_friends_general"
+users_source_dir = "../Data/Galaxy_ds/friends_tweets_general"
 set_output_directory()
 #user_list = open("../out/selected_users.txt", 'r')
-user_list = open("../Data/Galaxy_ds/valid_seed_users.txt", 'r')
+user_list = open("../Data/Galaxy_ds/valid_friends_users.txt", 'r')
 processed_count = 0
 for u_name in user_list:
     processed_count += 1
     u_name = u_name.rstrip()
     des = out_dir + "/" + u_name + ".txt"
     if not os.path.exists(des):
+               print(u_name)
                process_general_tweets(des, u_name)
     print(str(processed_count))
