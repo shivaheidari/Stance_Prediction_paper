@@ -5,7 +5,7 @@
 import os
 from gensim.models import KeyedVectors
 import Utils
-from WordEmbeddings.word2vec import word2vec
+from WordEmbedding.word2vec import word2vec
 
 """-----------------------private_meyhod_area---------------------"""
 
@@ -33,16 +33,16 @@ def create_out_directory(out_dir):
 
 """-----------------------main_area---------------------"""
 source_dir = '../Data/Galaxy_ds/preproc_target_seeds'
-out_dir = "../out/word2vec_glove_friends"
-glove_file_model = "../glove/glove.twitter.27B.200d"
-alternative_words_glove_file = '../etc/alternative_words_glove.txt'
+out_dir = "../Data/Galaxy_ds/W2Vec/Seed_users_target_tweets"
+glove_file_model = "../Data/Galaxy_ds/glove/glove.twitter.27B.200d"
+alternative_words_glove_file = '../Data/Galaxy_ds/W2Vec/etc/alternative_words_glove.txt'
 alternative_words = Utils.Utils().load_dictionary_with_list_value(alternative_words_glove_file)
 create_out_directory(out_dir)
 if not os.path.exists(glove_file_model):
     build_glove_model(glove_file_model)
 model = KeyedVectors.load(glove_file_model, mmap='r')
 processed_file_count = 0
-user_list = Utils.Utils().csv_read('../out/valid_friends.txt')
+user_list = Utils.Utils().csv_read('../Data/Galaxy_ds/valid_seed_users.txt')
 
 for user in user_list:
     uid = user[0].rstrip()
