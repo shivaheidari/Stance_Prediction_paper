@@ -32,7 +32,7 @@ def create_out_directory(out_dir):
 
 
 """-----------------------main_area---------------------"""
-source_dir = '../Data/Galaxy_ds/preproc_target_friends'
+source_dir = '../Data/Galaxy_ds/preproc_target_seeds'
 # out_dir = "../Data/Galaxy_ds/W2Vec/Seed_users_target_tweets"
 out_dir = "G:\My Drive\w2v"
 glove_file_model = "../Data/Galaxy_ds/glove/glove.twitter.27B.200d"
