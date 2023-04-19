@@ -17,11 +17,11 @@ class word2vec:
     def get_vector(self, op_tweet, vector):
         vec = 0
         for t in op_tweet:
-            if t in self.model.wv.vocab:
+            if t in self.model.key_to_index:
                 vec = self.model[t]
             else:
                 alt_t = self.alternative_words[t]
-                if alt_t in self.model.wv.vocab:
+                if alt_t in self.model.key_to_index:
                     vec = self.model[alt_t]
                 else:
                     print("error: word "+t+" not found")

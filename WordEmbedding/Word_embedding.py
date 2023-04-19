@@ -32,8 +32,9 @@ def create_out_directory(out_dir):
 
 
 """-----------------------main_area---------------------"""
-source_dir = '../Data/Galaxy_ds/preproc_target_seeds'
-out_dir = "../Data/Galaxy_ds/W2Vec/Seed_users_target_tweets"
+source_dir = '../Data/Galaxy_ds/preproc_target_friends'
+# out_dir = "../Data/Galaxy_ds/W2Vec/Seed_users_target_tweets"
+out_dir = "G:\My Drive\w2v"
 glove_file_model = "../Data/Galaxy_ds/glove/glove.twitter.27B.200d"
 alternative_words_glove_file = '../Data/Galaxy_ds/W2Vec/etc/alternative_words_glove.txt'
 alternative_words = Utils.Utils().load_dictionary_with_list_value(alternative_words_glove_file)
@@ -42,11 +43,12 @@ if not os.path.exists(glove_file_model):
     build_glove_model(glove_file_model)
 model = KeyedVectors.load(glove_file_model, mmap='r')
 processed_file_count = 0
-user_list = Utils.Utils().csv_read('../Data/Galaxy_ds/valid_seed_users.txt')
+user_list = Utils.Utils().csv_read('../Data/Galaxy_ds/valid_friends_users.txt')
 
 for user in user_list:
     uid = user[0].rstrip()
     if os.path.isfile(out_dir + '/' + uid + '.json') is False:
+        print(uid)
         w2v_obj = word2vec(uid, source_dir, out_dir, model, alternative_words)
         w2v_obj.glove()
         processed_file_count += 1
