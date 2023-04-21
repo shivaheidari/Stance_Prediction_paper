@@ -19,6 +19,14 @@ def savetofile(uname, friends):
     for friend in friends:
         f.write(friend+'\n')
 
+#valid seed usrs
+
+f = open("Data/Galaxy_ds/valid_seed_users_v2.txt", 'r')
+f2 = open("Data/Galaxy_ds/valid_seed_users_v3.txt", 'w+')
+for user in f:
+    user = user.rstrip()
+    if os.path.isfile("Data/Galaxy_ds/users_tweets_general/"+user+".txt") is True and os.path.isfile("Data/Galaxy_ds/users_target_tweets/"+user+'.txt') is True:
+        f2.write(user+"\n")
 #Form the network
 
 # files = os.listdir('Data/Galaxy_ds/Friends')

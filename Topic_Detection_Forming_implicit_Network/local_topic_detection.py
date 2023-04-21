@@ -9,9 +9,9 @@ def set_output_directory():
         os.makedirs(out_dir)
 
 
-out_dir = "../out/topics/"
+out_dir = "../Data/Galaxy_ds/Implicit_Network/Topics"
 set_output_directory()
-general_tweets_text_dir = "../out/general_profile_preprocessed/"
+general_tweets_text_dir = "../Data/Galaxy_ds/Implicit_Network/cleaned_Tweets_Seed_Users_general"
 lda_topic_file = "../out/topics/out.txt"
 summarized_topic_file = "../out/topics/summary.txt"
 user_list = Utils().csv_read('../out/valid_friends.txt')
