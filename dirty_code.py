@@ -31,7 +31,7 @@ def savetofile(uname, friends):
 
 #get the list of valid user:
 # valid_friends = open("Data/Galaxy_ds/valid_friends_users_v2.txt", 'w+')
-# users = open("Data/Galaxy_ds/valid_seed_users_v2.txt")
+# users = open("Data/Galaxy_ds/val/id_seed_users_v2.txt")
 # for user in users:
 #     user = user.rstrip()
 #     ufile = open("Data/Galaxy_ds/Friends/"+user+'.txt', 'r')
@@ -39,7 +39,29 @@ def savetofile(uname, friends):
 #         friend = friend.rstrip()
 #         valid_friends.write(friend+'\n')
 
-valid_friends_unique =
+# valid_friends = open("Data/Galaxy_ds/valid_friends_users_v2_unique.txt", 'w+')
+# validf = open("Data/Galaxy_ds/valid_friends_users_v2.txt", 'r')
+# vusers = set()
+# for u in validf:
+#     u = u.rstrip()
+#     vusers.add(u)
+#
+# for u in vusers:
+#     valid_friends.write(u+"\n")
+
+# looking for friends who have general profile and target profile
+
+# friends_full_profile = open("Data/Galaxy_ds/friends_target_profile.txt", 'w+')
+# friendslist = open("Data/Galaxy_ds/valid_friends_users_v2_unique.txt",'r')
+# for friend in friendslist:
+#     friend = friend.rstrip()
+#     if os.path.isfile("Data/Galaxy_ds/friends_target_tweets/"+friend+'.txt') is True:
+#         friends_full_profile.write(friend+"\n")
+#
+
+
+
+
 
 # for uname in ufile:
 #     uname = uname.strip()
