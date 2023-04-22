@@ -12,8 +12,8 @@ def set_output_directory():
 out_dir = "../Data/Galaxy_ds/Implicit_Network/Topics"
 set_output_directory()
 general_tweets_text_dir = "../Data/Galaxy_ds/Implicit_Network/cleaned_Tweets_Seed_Users_general"
-lda_topic_file = "../out/topics/out.txt"
-summarized_topic_file = "../out/topics/summary.txt"
-user_list = Utils().csv_read('../out/valid_friends.txt')
+lda_topic_file = "../Data/Galaxy_ds/Implicit_Network/out.txt"
+summarized_topic_file = "../Data/Galaxy_ds/Implicit_Network/summary.txt"
+user_list = Utils().csv_read('../Data/Galaxy_ds/valid_seed_users_v2.txt')
 text_topic_detection(general_tweets_text_dir, lda_topic_file, user_list).get_lda_topics()
 summarize_local_topics(lda_topic_file, summarized_topic_file).summarize_user_topics()
