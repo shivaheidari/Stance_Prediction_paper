@@ -1,0 +1,17 @@
+,[word pair co-occurrence],[annual season],probablity
+0,Cold+Drink,1. Spring,0.228
+1,Cold+Drink,2. Summer,0.485
+2,Cold+Drink,3. Fall,0.142
+3,Cold+Drink,4. Winter,0.142
+4,Hot+Day,1. Spring,0.265
+5,Hot+Day,2. Summer,0.371
+6,Hot+Day,3. Fall,0.220
+7,Hot+Day,4. Winter,0.142
+8,Hot+Night,1. Spring,0.269
+9,Hot+Night,2. Summer,0.387
+10,Hot+Night,3. Fall,0.203
+11,Hot+Night,4. Winter,0.139
+12,Go+Surf,1. Spring,0.215
+13,Go+Surf,2. Summer,0.268
+14,Go+Surf,3. Fall,0.364
+15,Go+Surf,4. Winter,0.151
