@@ -1,0 +1,17 @@
+#,Zeta,Precision,Type
+1,1,0.1625,Precision-3
+2,2,0.115625,Precision-3
+3,3,0.24,Precision-3
+4,4,0.378125,Precision-3
+5,5,0.279545455,Precision-3
+6,10,0.302777778,Precision-3
+7,15,0.444736842,Precision-3
+8,20,0.525,Precision-3
+9,1,0.108333333,Precision+3
+10,2,0.089583333,Precision+3
+11,3,0.161666667,Precision+3
+12,4,0.252083333,Precision+3
+13,5,0.186363636,Precision+3
+14,10,0.201851852,Precision+3
+15,15,0.296491228,Precision+3
+16,20,0.35,Precision+3

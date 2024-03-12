@@ -1,0 +1,5 @@
+the number of all tweets:165408
+the number of distinct tweets: 95724
+the number of tweets with opinion words:66357
+the number of users who has tweets with opinion words: 245
+the number of users with distinct tweets>2: 212

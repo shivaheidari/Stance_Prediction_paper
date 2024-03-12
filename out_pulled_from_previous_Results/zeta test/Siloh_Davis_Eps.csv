@@ -1,0 +1,71 @@
+﻿#,Epsilon,Score,Type
+1,0.02,0.999999809,Silhouette
+2,0.04,0.986563052,Silhouette
+3,0.06,0.968390861,Silhouette
+4,0.08,0.964652737,Silhouette
+5,0.1,0.96333794,Silhouette
+6,0.12,0.960990241,Silhouette
+7,0.14,0.958135328,Silhouette
+8,0.16,0.938719911,Silhouette
+9,0.18,0.86118762,Silhouette
+10,0.2,0.599589937,Silhouette
+11,0.22,0.582545049,Silhouette
+12,0.24,0.288507852,Silhouette
+13,0.26,0.201677596,Silhouette
+14,0.28,0.160907372,Silhouette
+15,0.3,0.142473012,Silhouette
+16,0.32,0.132253416,Silhouette
+17,0.34,0.091479373,Silhouette
+18,0.36,0.074273224,Silhouette
+19,0.38,0.037153927,Silhouette
+20,0.4,0.009278013,Silhouette
+21,0.42,-0.001425398,Silhouette
+22,0.44,-0.002810963,Silhouette
+23,0.46,-0.017351642,Silhouette
+24,0.48,-0.029771792,Silhouette
+25,0.5,-0.036630537,Silhouette
+26,0.52,-0.038097813,Silhouette
+27,0.54,-0.038810557,Silhouette
+28,0.56,-0.062966763,Silhouette
+29,0.58,-0.176637287,Silhouette
+30,0.6,-0.238336333,Silhouette
+31,0.62,-0.331809331,Silhouette
+32,0.64,-0.368262584,Silhouette
+33,0.66,-0.377345924,Silhouette
+34,0.68,-0.383904267,Silhouette
+35,0.7,-0.395913725,Silhouette
+36,0.02,5.81E-07,Davies bouldin
+37,0.04,0.025687328,Davies bouldin
+38,0.06,0.054173515,Davies bouldin
+39,0.08,0.061630533,Davies bouldin
+40,0.1,0.063030368,Davies bouldin
+41,0.12,0.066615019,Davies bouldin
+42,0.14,0.075259637,Davies bouldin
+43,0.16,0.102159296,Davies bouldin
+44,0.18,0.204970145,Davies bouldin
+45,0.2,0.477371065,Davies bouldin
+46,0.22,0.510283305,Davies bouldin
+47,0.24,0.552686581,Davies bouldin
+48,0.26,0.62925903,Davies bouldin
+49,0.28,0.746466174,Davies bouldin
+50,0.3,0.753483695,Davies bouldin
+51,0.32,0.770928562,Davies bouldin
+52,0.34,0.807168295,Davies bouldin
+53,0.36,0.868782969,Davies bouldin
+54,0.38,0.956650258,Davies bouldin
+55,0.4,1.025185158,Davies bouldin
+56,0.42,1.037263715,Davies bouldin
+57,0.44,1.038795115,Davies bouldin
+58,0.46,1.040852515,Davies bouldin
+59,0.48,1.055132076,Davies bouldin
+60,0.5,1.067794288,Davies bouldin
+61,0.52,1.079063738,Davies bouldin
+62,0.54,1.149432686,Davies bouldin
+63,0.56,1.167064795,Davies bouldin
+64,0.58,1.210193431,Davies bouldin
+65,0.6,1.21082938,Davies bouldin
+66,0.62,1.214107399,Davies bouldin
+67,0.64,1.225466142,Davies bouldin
+68,0.66,1.289234633,Davies bouldin
+69,0.68,1.295486413,Davies bouldin
+70,0.7,1.339297184,Davies bouldin
