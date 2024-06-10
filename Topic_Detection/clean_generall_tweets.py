@@ -2,7 +2,7 @@ import codecs
 import os
 import pycld2 as cld2
 import pandas as pd
-
+import re
 """ ---------------------private method area----------------------------------------"""
 
 
@@ -40,13 +40,15 @@ def process_general_tweets(des_fie, user_name):
         print(user_name+".txt not exist")
         return
     df_file = pd.read_json(codecs.open(source_file, 'r', 'utf-8'), orient='records', lines=True)
-    url_regex = r'(\S+[.]){2,}[^\s]+|\S+:\/\/(\S+[.])+[^\s]+'
+    url_regex = url_regex = r'https?://\S+|www\.\S+|(?!www)\b\w+\.\w+\b'
+    url_http_set = url_regex = r'https?://\S+|www\.\S+|[\w-]+(\.[\w-]+)+(/[\w-]*)*'
     mention_regex = r'@\S+'
     # just number strings we don't want to eliminate 2 from CO2
     number_regex = r'\d\d+'
     non_alphanumeric_regex = r'[^((a-zA-Z0-9)+|\s)]'
-
-    df_file['tweet'] = df_file['tweet'].str.replace(mention_regex + "|" + url_regex + "|" + number_regex, ' ',
+    combined_regex = f"{mention_regex}|{url_regex}|{number_regex}|{url_http_set}"
+    
+    df_file['tweet'] = df_file['tweet'].str.replace(combined_regex, ' ',
                                                     case=False)
 
     #df_file['tweet'] = df_file['tweet'].str.replace(common_topic_regex, ' ', case=False)
@@ -61,19 +63,21 @@ def process_general_tweets(des_fie, user_name):
     df_file["strLen"] = df_file['tweet'].apply(lambda x: tweet_size(x))
     df_file = df_file.drop(df_file.loc[df_file['strLen'] < 4].index)
 
+    # if df_file.index.size >= 0:
+    #     with open(des_fie, 'a+', encoding='utf-8') as file:
+    #         df_file[['tweet']].to_csv(file, encoding='utf-8', header=False, index=False, newline='\n')
     if df_file.index.size >= 0:
-        with open(des_fie, 'a+', encoding='utf-8') as file:
-            df_file[['tweet']].to_csv(file, encoding='utf-8', header=False, index=False, line_terminator='\n')
-
+       with open(des_fie, 'a+', encoding='utf-8') as file:
+        df_file[['tweet']].to_csv(file, encoding='utf-8', header=False, index=False)
 
 """ ------------------------------main area----------------------------------------"""
 # Samsung related topics are common between all users so it has no value for detecting similar users
 #common_topic_regex = r'(.+samsung).+'
-out_dir = "../Data/Galaxy_ds/Topic_detection/cleaned_Tweets_friends_general"
-users_source_dir = "../Data/Galaxy_ds/friends_tweets_general"
+out_dir = "Data/Galaxy_ds/Topic_Detection/cleaned_Tweets_seeds_general"
+users_source_dir = "Data/Galaxy_ds/users_tweets_general"
 set_output_directory()
 #user_list = open("../out/selected_users.txt", 'r')
-user_list = open("../Data/Galaxy_ds/valid_friends_users.txt", 'r')
+user_list = open("Data/Galaxy_ds/valid_seed_users.txt", 'r')
 processed_count = 0
 for u_name in user_list:
     processed_count += 1
@@ -83,3 +87,21 @@ for u_name in user_list:
                print(u_name)
                process_general_tweets(des, u_name)
     print(str(processed_count))
+
+
+# import re
+
+# def clean_text(text):
+#     # Define a regular expression pattern to match URLs, email addresses, numbers, hashtags, mentions, and multi-segment URLs
+#     pattern = r'\b(?:https?://\S+|www\.\S+|mailto:\S+|tel:\S+|@\S+|#\S+|\d+|(?:\w+\.)+\w+(?:/\S+)*)\b'
+    
+#     # Use re.sub to remove matched patterns and replace with a space
+#     cleaned_text = re.sub(pattern, ' ', text, flags=re.IGNORECASE)
+    
+#     return ' '.join(cleaned_text.split())  # Remove extra spaces and strip
+
+# # Test the clean_text function
+# text = "This is a sample text with a URL https://www.example.com, an email address example@email.com, a phone number +1 (555) 123-4567, a hashtag #NLTK, a mention @user123, and a multi-segment URL https://example.com/path/to/resource."
+# cleaned_text = clean_text(text)
+# print(cleaned_text)
+
