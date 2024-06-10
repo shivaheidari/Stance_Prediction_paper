@@ -1,0 +1,17 @@
+,[word pair co-occurrence],[hour period],probablity
+0,[Go Work],00 to 05,0.29
+1,[Go Work],06 to 11,0.32
+2,[Go Work],12 to 17,0.11
+3,[Go Work],18 to 23,0.26
+4,Drive+Work,00 to 05,0.144
+5,Drive+Work,06 to 11,0.289
+6,Drive+Work,12 to 17,0.108
+7,Drive+Work,18 to 23,0.457
+8,Have+Tea,00 to 05,0.303
+9,Have+Tea,06 to 11,0.383
+10,Have+Tea,12 to 17,0.147
+11,Have+Tea,18 to 23,0.165
+12,Have+Fun,00 to 05,0.306
+13,Have+Fun,06 to 11,0.388
+14,Have+Fun,12 to 17,0.143
+15,Have+Fun,18 to 23,0.161

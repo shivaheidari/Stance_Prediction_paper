@@ -1,0 +1,131 @@
+﻿#,Clusters,Score,Type
+1,2,0.472095708,Silhouette
+2,4,0.269000673,Silhouette
+3,6,0.198241269,Silhouette
+4,8,0.162711038,Silhouette
+5,10,0.155877411,Silhouette
+6,22,0.150073572,Silhouette
+7,14,0.149120651,Silhouette
+8,20,0.143280875,Silhouette
+9,26,0.135322228,Silhouette
+10,12,0.134921156,Silhouette
+11,44,0.125685808,Silhouette
+12,16,0.123912638,Silhouette
+13,48,0.120073641,Silhouette
+14,30,0.119322415,Silhouette
+15,36,0.11869783,Silhouette
+16,34,0.117153374,Silhouette
+17,46,0.116938405,Silhouette
+18,32,0.116646992,Silhouette
+19,18,0.115540426,Silhouette
+20,24,0.115350215,Silhouette
+21,70,0.115091673,Silhouette
+22,54,0.11491437,Silhouette
+23,50,0.114081043,Silhouette
+24,58,0.113642827,Silhouette
+25,74,0.113185927,Silhouette
+26,38,0.112107988,Silhouette
+27,62,0.111035992,Silhouette
+28,42,0.110724749,Silhouette
+29,28,0.110658029,Silhouette
+30,60,0.110386326,Silhouette
+31,72,0.110258849,Silhouette
+32,76,0.110214476,Silhouette
+33,56,0.1097337,Silhouette
+34,86,0.108291536,Silhouette
+35,94,0.108211341,Silhouette
+36,66,0.108037842,Silhouette
+37,40,0.107772811,Silhouette
+38,108,0.107448309,Silhouette
+39,102,0.106878323,Silhouette
+40,100,0.106641597,Silhouette
+41,68,0.106276918,Silhouette
+42,78,0.105245797,Silhouette
+43,96,0.104726683,Silhouette
+44,52,0.104513288,Silhouette
+45,88,0.104168891,Silhouette
+46,92,0.103562797,Silhouette
+47,112,0.102859277,Silhouette
+48,98,0.102477057,Silhouette
+49,80,0.101368711,Silhouette
+50,116,0.101208026,Silhouette
+51,118,0.100766672,Silhouette
+52,64,0.099846844,Silhouette
+53,110,0.098481965,Silhouette
+54,84,0.098447923,Silhouette
+55,90,0.098016732,Silhouette
+56,124,0.097992863,Silhouette
+57,128,0.097453084,Silhouette
+58,82,0.096365216,Silhouette
+59,114,0.09594392,Silhouette
+60,106,0.095719274,Silhouette
+61,120,0.095638964,Silhouette
+62,104,0.095452252,Silhouette
+63,122,0.093085687,Silhouette
+64,130,0.092834743,Silhouette
+65,126,0.091485702,Silhouette
+66,2,0.831744815,Davies bouldin
+67,4,1.150788431,Davies bouldin
+68,8,1.557134858,Davies bouldin
+69,14,1.571574472,Davies bouldin
+70,6,1.574591459,Davies bouldin
+71,10,1.578770497,Davies bouldin
+72,22,1.593529309,Davies bouldin
+73,20,1.645743575,Davies bouldin
+74,16,1.687648273,Davies bouldin
+75,12,1.690340327,Davies bouldin
+76,44,1.690934671,Davies bouldin
+77,28,1.712368318,Davies bouldin
+78,72,1.716005172,Davies bouldin
+79,26,1.727405785,Davies bouldin
+80,24,1.730103014,Davies bouldin
+81,36,1.735638978,Davies bouldin
+82,30,1.750648933,Davies bouldin
+83,108,1.752501991,Davies bouldin
+84,70,1.76101083,Davies bouldin
+85,48,1.763902336,Davies bouldin
+86,34,1.765398964,Davies bouldin
+87,42,1.766867539,Davies bouldin
+88,60,1.769466727,Davies bouldin
+89,58,1.773783752,Davies bouldin
+90,46,1.773864649,Davies bouldin
+91,56,1.775106252,Davies bouldin
+92,74,1.777113225,Davies bouldin
+93,94,1.778593611,Davies bouldin
+94,52,1.784959125,Davies bouldin
+95,76,1.786063667,Davies bouldin
+96,32,1.795102212,Davies bouldin
+97,88,1.800189563,Davies bouldin
+98,38,1.800341843,Davies bouldin
+99,92,1.802784881,Davies bouldin
+100,116,1.803156421,Davies bouldin
+101,90,1.808443426,Davies bouldin
+102,78,1.812026994,Davies bouldin
+103,80,1.814132383,Davies bouldin
+104,128,1.81479479,Davies bouldin
+105,124,1.815989794,Davies bouldin
+106,96,1.817085449,Davies bouldin
+107,106,1.817697039,Davies bouldin
+108,50,1.818041009,Davies bouldin
+109,100,1.818630617,Davies bouldin
+110,68,1.822499744,Davies bouldin
+111,86,1.825644569,Davies bouldin
+112,62,1.826274046,Davies bouldin
+113,54,1.82681227,Davies bouldin
+114,66,1.833884487,Davies bouldin
+115,130,1.841257994,Davies bouldin
+116,40,1.844255847,Davies bouldin
+117,114,1.846491352,Davies bouldin
+118,122,1.84694791,Davies bouldin
+119,84,1.849106416,Davies bouldin
+120,64,1.852881147,Davies bouldin
+121,110,1.853017842,Davies bouldin
+122,118,1.854462686,Davies bouldin
+123,102,1.858829791,Davies bouldin
+124,98,1.859288169,Davies bouldin
+125,104,1.859522241,Davies bouldin
+126,18,1.864952823,Davies bouldin
+127,120,1.89289201,Davies bouldin
+128,82,1.899858368,Davies bouldin
+129,126,1.904642785,Davies bouldin
+130,112,1.916614431,Davies bouldin
