@@ -37,5 +37,6 @@ plt.xlabel('users')
 plt.ylabel('number of tweets')
 
 plt.legend()
-plt.show()
 plt.savefig('plots/poisson_distribution.png')
+plt.show()
+
